@@ -5,17 +5,22 @@ module Api
       def index
         # teams = TeamsFacade.advanced_stat_search(params[:year])
         # top_15 = search_criterion(teams)
-        render json: TeamsSerializer.new(teams)
+        render json: TeamsSerializer.new(@teams)
       end
 
       private
         def check_valid_year
-          if !params[:year].nil?
-            teams = TeamsFacade.advanced_stat_search(params[:year])
+          if !params[:year].nil? && year_check
+            @teams = TeamsFacade.advanced_stat_search(params[:year])
           else
-            render json: "Please enter a year between 2016-2022", status: 404
+            render json: "Please enter a valid year between 2016-2022", status: 404
           end
         end
+
+        def year_check
+          (2016..2022).to_a.map(&:to_s).include?(params[:year])
+        end
+
 
     #   def search_criterion(teams)
     #     if !params[:overall].nil?
@@ -26,7 +31,6 @@ module Api
     #       teams.sort_by{|team|team.db_havoc}.reverse!.slice!(0..14)
     #     else
     #       #error
-      end
     end
   end
 end

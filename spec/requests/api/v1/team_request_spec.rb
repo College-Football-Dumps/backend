@@ -25,7 +25,14 @@ RSpec.describe 'Team Data' do
   it 'returns team advanced stats information, sad path', :vcr do
     get '/api/v1/teams', headers: headers, params: { year: ""  }
 
-    expect(response).to be_not_successful
     expect(response.status).to eq(404)
+    expect(response.body).to eq("Please enter a valid year between 2016-2022")
+  end
+
+  it 'returns team advanced stats information, sad path', :vcr do
+    get '/api/v1/teams', headers: headers, params: { year: "2014"  }
+    
+    expect(response.status).to eq(404)
+    expect(response.body).to eq("Please enter a valid year between 2016-2022")
   end
 end
