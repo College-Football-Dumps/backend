@@ -230,6 +230,22 @@
           null
         ]
       },
+      "/Users/johnsantosuosso/College-Football-Dumps/backend/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/College-Football-Dumps/backend/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/johnsantosuosso/College-Football-Dumps/backend/spec/requests/api/v1/team_request_spec.rb": {
         "lines": [
           1,
@@ -388,6 +404,6 @@
         ]
       }
     },
-    "timestamp": 1665253979
+    "timestamp": 1665254227
   }
 }
