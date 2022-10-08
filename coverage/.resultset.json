@@ -1,44 +1,15 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/johnsantosuosso/College-Football-Dumps/backend/spec/requests/api/v1/team_request_spec.rb": {
+      "/Users/johnsantosuosso/College-Football-Dumps/backend/spec/models/user_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
+          2,
+          2,
           null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
           null,
           null
         ]
@@ -259,6 +230,64 @@
           null
         ]
       },
+      "/Users/johnsantosuosso/College-Football-Dumps/backend/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/College-Football-Dumps/backend/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/College-Football-Dumps/backend/spec/requests/api/v1/team_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/johnsantosuosso/College-Football-Dumps/backend/app/controllers/api/v1/teams_controller.rb": {
         "lines": [
           1,
@@ -375,6 +404,6 @@
         ]
       }
     },
-    "timestamp": 1664834951
+    "timestamp": 1665254227
   }
 }
